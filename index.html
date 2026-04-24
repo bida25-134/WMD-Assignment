@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About – Lefatshe Mushrooms</title>
+  <title>Home – Lefatshe Mushrooms</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -19,8 +19,8 @@
       </button>
       <div class="collapse navbar-collapse" id="nav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link active" aria-current="page" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
           <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
           <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
           <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
@@ -29,38 +29,43 @@
     </div>
   </nav>
 
+  <!-- Page header / hero landmark -->
+  <header class="hero text-center text-white py-5 bg-success">
+    <h1>Fresh, Local Mushrooms</h1>
+    <p class="lead">Quality Oyster and Shiitake mushrooms grown in Botswana</p>
+    <a href="products.html" class="btn btn-light btn-lg mt-2">See Our Products</a>
+  </header>
+
   <!-- Main content landmark -->
-  <main class="container mt-5">
+  <main>
 
-    <!-- About Us section -->
-    <section aria-labelledby="about-heading">
-      <h1 id="about-heading">About Us</h1>
+    <!-- Welcome section -->
+    <section class="container mt-5" aria-labelledby="welcome-heading">
+      <h2 id="welcome-heading">Welcome to Lefatshe Mushrooms</h2>
+      <img src="images/farm.jpg" alt="Lefatshe Mushroom Farm" class="img-fluid mt-3 w-100" style="max-height: 300px; object-fit: cover;">
       <p class="mt-3">
-        Lefatshe Mushrooms was created to provide fresh, locally grown mushrooms to the Botswana
-        market. Our mission is to deliver healthy, high-quality produce while supporting local agriculture.
+        Lefatshe Mushrooms is a local business dedicated to growing fresh and healthy mushrooms
+        for individuals, restaurants, and retailers across Gaborone and surrounding areas.
       </p>
     </section>
 
-    <!-- Mission section -->
-    <section class="mt-4" aria-labelledby="mission-heading">
-      <h2 id="mission-heading">Our Mission</h2>
-      <p>
-        We believe that healthy, nutritious food should be accessible to everyone. By growing
-        Oyster and Shiitake mushrooms locally, we reduce the cost of imported produce and bring
-        fresh quality directly to homes, restaurants, and retailers in Gaborone and beyond.
-      </p>
-    </section>
-
-    <!-- Story section -->
-    <section class="mt-4" aria-labelledby="story-heading">
-      <h2 id="story-heading">Our Story</h2>
-      <p>
-        Lefatshe Mushrooms started as a small passion project rooted in a love for healthy eating
-        and local agriculture. What began as a small growing operation has grown into a business
-        committed to supplying the freshest mushrooms Botswana has to offer. The name
-        <em>Lefatshe</em> means "earth" in Setswana — a fitting name for a business that is
-        deeply connected to the land.
-      </p>
+    <!-- Why choose us section -->
+    <section class="container mt-5" aria-labelledby="why-heading">
+      <h2 id="why-heading">Why Choose Us?</h2>
+      <div class="row mt-3">
+        <div class="col-md-4">
+          <h5>Locally Grown</h5>
+          <p>Our mushrooms are grown right here in Botswana, ensuring freshness from farm to table.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Two Premium Varieties</h5>
+          <p>We offer Oyster and Shiitake mushrooms, each packed with nutrition and flavour.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Easy Ordering</h5>
+          <p>Contact us directly through our order form to place your enquiry quickly and simply.</p>
+        </div>
+      </div>
     </section>
 
   </main>

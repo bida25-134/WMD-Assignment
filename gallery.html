@@ -1,65 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Gallery</title>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery – Lefatshe Mushrooms</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<nav class="navbar navbar-dark bg-dark">
-<div class="container">
-<a class="navbar-brand" href="index.html">Lefatshe Mushrooms</a>
+  <!-- Site-wide navigation landmark -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Lefatshe Mushrooms</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
-<span class="navbar-toggler-icon"></span>
-</button>
+  <!-- Main content landmark -->
+  <main class="container mt-5">
 
-<div class="collapse navbar-collapse" id="nav">
-<ul class="navbar-nav ms-auto">
-<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-<li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-<li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
-<li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-<li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-</ul>
-</div>
-</div>
-</nav>
+    <!-- Gallery section -->
+    <section aria-labelledby="gallery-heading">
+      <h1 id="gallery-heading">Gallery</h1>
+      <p class="mt-2">A look at our mushrooms and growing process from farm to table.</p>
 
-<div class="container mt-5">
-<h1>Gallery</h1>
+      <div class="row mt-4">
 
-<div class="row">
+        <!-- Each image wrapped in a figure with a figcaption for proper HTML5 structure -->
 
-<div class="col-md-4">
-<img src="images/farm.jpg" alt="Mushroom farm" width="100%" height="200">
-</div>
+        <div class="col-md-4 mb-4">
+          <figure class="m-0">
+            <img src="images/farm.jpg" alt="The Lefatshe Mushroom growing facility"
+              class="img-fluid w-100" style="height: 200px; object-fit: cover;">
+            <figcaption class="text-muted mt-1 small">Our mushroom growing facility</figcaption>
+          </figure>
+        </div>
 
-<div class="col-md-4">
-<img src="images/oyster.jpg" alt="Oyster mushrooms" width="100%" height="200">
-</div>
+        <div class="col-md-4 mb-4">
+          <figure class="m-0">
+            <img src="images/oyster.jpg" alt="Freshly harvested Oyster mushrooms"
+              class="img-fluid w-100" style="height: 200px; object-fit: cover;">
+            <figcaption class="text-muted mt-1 small">Freshly harvested Oyster mushrooms</figcaption>
+          </figure>
+        </div>
 
-<div class="col-md-4">
-<img src="images/shiitake.jpg" alt="Shiitake mushrooms" width="100%" height="200">
-</div>
+        <div class="col-md-4 mb-4">
+          <figure class="m-0">
+            <img src="images/shiitake.jpg" alt="Freshly harvested Shiitake mushrooms"
+              class="img-fluid w-100" style="height: 200px; object-fit: cover;">
+            <figcaption class="text-muted mt-1 small">Freshly harvested Shiitake mushrooms</figcaption>
+          </figure>
+        </div>
 
-<div class="col-md-4 mt-3">
-<img src="images/growing.jpg" alt="Mushroom growing process" width="100%" height="200">
-</div>
+        <div class="col-md-4 mb-4">
+          <figure class="m-0">
+            <img src="images/growing.jpg" alt="Mushrooms in the growing process"
+              class="img-fluid w-100" style="height: 200px; object-fit: cover;">
+            <figcaption class="text-muted mt-1 small">Mushrooms during the growing process</figcaption>
+          </figure>
+        </div>
 
-<div class="col-md-4 mt-3">
-<img src="images/harvest.jpg" alt="Mushroom harvest" width="100%" height="200">
-</div>
+        <div class="col-md-4 mb-4">
+          <figure class="m-0">
+            <img src="images/harvest.jpg" alt="Mushrooms being harvested"
+              class="img-fluid w-100" style="height: 200px; object-fit: cover;">
+            <figcaption class="text-muted mt-1 small">Harvest time at Lefatshe Mushrooms</figcaption>
+          </figure>
+        </div>
 
-<div class="col-md-4 mt-3">
-<img src="images/packaging.jpg" alt="Mushroom packaging" width="100%" height="200">
-</div>
+        <div class="col-md-4 mb-4">
+          <figure class="m-0">
+            <img src="images/packaging.jpg" alt="Mushrooms being packaged for delivery"
+              class="img-fluid w-100" style="height: 200px; object-fit: cover;">
+            <figcaption class="text-muted mt-1 small">Packaging fresh mushrooms for delivery</figcaption>
+          </figure>
+        </div>
 
-</div>
-</div>
+      </div>
+    </section>
 
+  </main>
+
+  <!-- Site-wide footer landmark -->
+  <footer class="bg-dark text-white text-center p-3 mt-5">
+    <p class="mb-1">© 2026 Lefatshe Mushrooms</p>
+    <nav aria-label="Footer navigation">
+      <a class="text-white me-3" href="index.html">Home</a>
+      <a class="text-white me-3" href="about.html">About</a>
+      <a class="text-white me-3" href="products.html">Products</a>
+      <a class="text-white me-3" href="gallery.html">Gallery</a>
+      <a class="text-white" href="contact.html">Contact</a>
+    </nav>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
