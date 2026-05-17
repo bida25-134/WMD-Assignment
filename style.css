@@ -1,9 +1,109 @@
-.hero {
-background: url('https://images.unsplash.com/photo-1506806732259-39c2d0268443');
-background-size: cover;
-padding: 100px;
+/* ============================================
+   Lefatshe Mushrooms – style.css
+   External stylesheet for all 5 pages
+   ============================================ */
+
+/* === BASE / BODY === */
+body {
+  font-family: Arial, sans-serif;
+  color: #212121;
+  background-color: #f9f9f9;
 }
 
-body {
-font-family: Arial, sans-serif;
+/* === HERO SECTION === */
+.hero {
+  background: url('https://images.unsplash.com/photo-1506806732259-39c2d0268443');
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 24px;
+}
+
+/* === NAVIGATION === */
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.2rem;
+  letter-spacing: 0.5px;
+}
+
+.nav-link {
+  transition: color 0.3s ease;
+}
+
+/* === PRODUCT ARTICLES === */
+article {
+  background-color: #ffffff;
+  transition: box-shadow 0.3s ease;
+}
+
+article:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* === FOOTER === */
+footer a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #a5d6a7 !important;
+}
+
+/* === FORM === */
+.form-control:focus,
+.form-select:focus {
+  border-color: #2e7d32;
+  box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.2);
+}
+
+/* === GALLERY FIGURES === */
+figure img {
+  border-radius: 4px;
+}
+
+/* ============================================
+   MEDIA QUERIES
+   ============================================ */
+
+/* Tablet and below – 768px */
+@media (max-width: 768px) {
+  .hero {
+    padding: 60px 16px;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+}
+
+/* Mobile – 480px */
+@media (max-width: 480px) {
+  .hero {
+    padding: 40px 12px;
+  }
+
+  .hero h1 {
+    font-size: 1.4rem;
+  }
+
+  body {
+    font-size: 15px;
+  }
 }
